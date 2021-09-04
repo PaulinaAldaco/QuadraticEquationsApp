@@ -8,10 +8,10 @@
 import Foundation
 
 public class Solution {
-    public let rootOne: Float
-    public let rootTwo: Float
+    public var rootOne: String
+    public var rootTwo: String
     
-    public init(rootOne: Float, rootTwo: Float) {
+    public init(rootOne: String, rootTwo: String) {
         self.rootOne = rootOne
         self.rootTwo = rootTwo
     }

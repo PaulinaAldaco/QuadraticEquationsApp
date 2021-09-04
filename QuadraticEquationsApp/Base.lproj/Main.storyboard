@@ -71,8 +71,9 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ltm-bB-WnZ">
                                                 <rect key="frame" x="53" y="5.5" width="281.5" height="44.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="aTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -98,8 +99,9 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wTW-PY-Hao">
                                                 <rect key="frame" x="53" y="6" width="281.5" height="44.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="bTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -125,8 +127,9 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwE-ZW-UWX">
                                                 <rect key="frame" x="53" y="5.5" width="281.5" height="44.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="cTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -146,6 +149,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WtA-L4-QEv">
                                                 <rect key="frame" x="123" y="14" width="106" height="27.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="solve"/>
                                                 <state key="normal" title="Solve"/>
                                                 <connections>
                                                     <action selector="solve:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iv8-k8-eIY"/>
@@ -171,6 +175,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cP6-LX-OjY">
                                                 <rect key="frame" x="105.5" y="5.5" width="211.5" height="44.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="rootOneTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -198,6 +203,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="abb-fE-XoZ">
                                                 <rect key="frame" x="105.5" y="6" width="211.5" height="44.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="rootTwoTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>

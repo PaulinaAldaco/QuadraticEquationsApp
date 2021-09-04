@@ -16,9 +16,9 @@ class CalculatorTests: XCTestCase {
 
         let input = Equation(a: 1, b: 0, c: -1)
         
-        let result = calculator.solveEquation(equation: input)
+        let result: Solution = calculator.solveEquation(equation: input)
         
-        let expectedSolution = Calculator.QuadraticSolution.Real(rootOne: 1, rootTwo: -1)
+        let expectedSolution: Solution = Solution(rootOne: "1.0", rootTwo: "-1.0")
         
         // Compare result with expected outcome
         XCTAssertEqual(result.rootOne, expectedSolution.rootOne)
@@ -29,9 +29,9 @@ class CalculatorTests: XCTestCase {
 
         let input = Equation(a: 1, b: 1, c: 0.25)
         
-        let result = calculator.solveEquation(equation: input)
+        let result: Solution = calculator.solveEquation(equation: input)
         
-        let expectedSolution = Calculator.QuadraticSolution.Real(rootOne: -0.5, rootTwo: -0.5)
+        let expectedSolution: Solution = Solution(rootOne: "-0.5", rootTwo: "-0.5")
         
         // Compare result with expected outcome
         XCTAssertEqual(result.rootOne, expectedSolution.rootOne)
@@ -40,12 +40,12 @@ class CalculatorTests: XCTestCase {
     
     func testComplexRoot() throws {
 
-        let input = Equation(a: 1, b: 1, c: 0.25)
+        let input = Equation(a: 1, b: 4, c: 5)
         
-        let result = calculator.solveEquation(equation: input)
+        let result: Solution = calculator.solveEquation(equation: input)
         
-        let expectedSolution = Calculator.QuadraticSolution.Real(rootOne: -0.5, rootTwo: -0.5)
-        
+        let expectedSolution: Solution = Solution(rootOne: "-2.0 + 1.0i", rootTwo: "-2.0 - 1.0i")
+
         // Compare result with expected outcome
         XCTAssertEqual(result.rootOne, expectedSolution.rootOne)
         XCTAssertEqual(result.rootTwo, expectedSolution.rootTwo)
